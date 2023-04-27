@@ -7,11 +7,23 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/bt_detalles"
+        android:layout_width="289dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="260dp"
+        android:text="DETALLES"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723" />
+
+    <Button
         android:id="@+id/bt_multiplicar"
         android:layout_width="289dp"
         android:layout_height="48dp"
         android:layout_marginTop="260dp"
-        android:text="MULTIPLICAR"
+        android:text="CALCULAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,19 +32,18 @@
 
     <TextView
         android:id="@+id/resultado"
-        android:layout_width="271dp"
-        android:layout_height="157dp"
+        android:layout_width="224dp"
+        android:layout_height="44dp"
         android:layout_marginTop="445dp"
-        android:background="#FF0000"
+        android:background="#DECCC8"
         android:text=""
-        android:textColor="#FFFF00"
-        android:textSize="12sp"
+        android:textColor="#000000"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.435"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.248" />
+        app:layout_constraintVertical_bias="0.15" />
 
     <Button
         android:id="@+id/bt_borrar"
@@ -57,15 +68,16 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.102"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.16" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -174,7 +186,7 @@
 
         </LinearLayout>
 
-    </LinearLayout>10
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
